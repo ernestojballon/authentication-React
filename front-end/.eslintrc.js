@@ -1,0 +1,35 @@
+module.exports = {
+    extends: [
+        'airbnb',
+        'prettier',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+    ],
+    plugins: ['prettier', 'import'],
+    env: {
+        browser: true,
+        es2021: true,
+    },
+    parserOptions: {
+        ecmaVersion: 12,
+        sourceType: 'module',
+    },
+    rules: {
+        'prettier/prettier': 'off',
+        'no-unused-vars': 'warn',
+        'no-console': 'off',
+        'func-names': 'off',
+        'no-process-exit': 'off',
+        'object-shorthand': 'off',
+        'class-methods-use-this': 'off',
+        'no-underscore-dangle': 0,
+        'import/no-unresolved': 2,
+        'import/named': 2,
+        'import/namespace': 2,
+        'import/default': 2,
+        'import/export': 2,
+        'import/prefer-default-export': 0,
+        'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
+        'react/no-unknown-property': ['error', { ignore: ['css'] }],
+    },
+};

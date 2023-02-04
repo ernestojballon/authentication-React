@@ -1,0 +1,43 @@
+{
+    "name": "back-end",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node -r dotenv/config ./src/server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "7.13.10",
+        "@babel/node": "7.13.12",
+        "@babel/preset-env": "7.13.12",
+        "bcrypt": "^5.1.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.3",
+        "express": "4.17.1",
+        "jsonwebtoken": "^9.0.0",
+        "mongodb": "3.6.5",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "babel-plugin-module-resolver": "^5.0.0",
+        "eslint": "^8.32.0",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^8.6.0",
+        "eslint-import-resolver-babel-module": "^5.3.2",
+        "eslint-import-resolver-jsconfig": "^1.1.0",
+        "eslint-import-resolver-node": "^0.3.7",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-jsx-a11y": "^6.7.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.1",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "nodemon": "2.0.7",
+        "prettier": "^2.8.3"
+    }
+}
